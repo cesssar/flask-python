@@ -15,7 +15,7 @@ def audio():
 	txt = p.get('texto')
 	arquivo = p.get('nome_arquivo') + '.mp3'
 	saveAudio(txt,arquivo)
-	return send_from_directory('/var/www/html/',filename=arquivo,as_attachment=True)
+	return send_from_directory('/var/www/html/audios/',filename=arquivo,as_attachment=True)
 
 @app.errorhandler(404)
 def page_not_found(e):
