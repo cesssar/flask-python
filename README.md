@@ -133,3 +133,9 @@ url : http://192.168.1.103/testFlask/
 apache_flask_app_running.png
 
 Congratulations, we have successfully deployed a flask application on ubuntu 18.04
+
+==================================================================================
+
+No crontab -e adicionar uma tarefa para limpeza da pasta
+
+40 10 * * * rm -f /var/www/html/audios
