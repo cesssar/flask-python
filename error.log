@@ -1,0 +1,119 @@
+[Sat May 30 23:21:48.964512 2020] [wsgi:error] [pid 3384:tid 140661235898112] [client 192.168.0.5:53780] mod_wsgi (pid=3384): Failed to exec Python script file '/var/www/flask/api.wsgi'.
+[Sat May 30 23:21:48.964588 2020] [wsgi:error] [pid 3384:tid 140661235898112] [client 192.168.0.5:53780] mod_wsgi (pid=3384): Exception occurred processing WSGI script '/var/www/flask/api.wsgi'.
+[Sat May 30 23:21:48.964784 2020] [wsgi:error] [pid 3384:tid 140661235898112] [client 192.168.0.5:53780] Traceback (most recent call last):
+[Sat May 30 23:21:48.964813 2020] [wsgi:error] [pid 3384:tid 140661235898112] [client 192.168.0.5:53780]   File "/var/www/flask/api.wsgi", line 9, in <module>
+[Sat May 30 23:21:48.964819 2020] [wsgi:error] [pid 3384:tid 140661235898112] [client 192.168.0.5:53780]     from api import app as application
+[Sat May 30 23:21:48.964834 2020] [wsgi:error] [pid 3384:tid 140661235898112] [client 192.168.0.5:53780]   File "/var/www/flask/api.py", line 16
+[Sat May 30 23:21:48.964844 2020] [wsgi:error] [pid 3384:tid 140661235898112] [client 192.168.0.5:53780]     arquivo = p.get('nome_arquivo').'mp3'
+[Sat May 30 23:21:48.964866 2020] [wsgi:error] [pid 3384:tid 140661235898112] [client 192.168.0.5:53780]                                     ^
+[Sat May 30 23:21:48.964875 2020] [wsgi:error] [pid 3384:tid 140661235898112] [client 192.168.0.5:53780] SyntaxError: invalid syntax
+[Sat May 30 23:22:59.371576 2020] [wsgi:error] [pid 3536:tid 140110792210176] [client 192.168.0.5:53789] mod_wsgi (pid=3536): Failed to exec Python script file '/var/www/flask/api.wsgi'.
+[Sat May 30 23:22:59.371636 2020] [wsgi:error] [pid 3536:tid 140110792210176] [client 192.168.0.5:53789] mod_wsgi (pid=3536): Exception occurred processing WSGI script '/var/www/flask/api.wsgi'.
+[Sat May 30 23:22:59.371842 2020] [wsgi:error] [pid 3536:tid 140110792210176] [client 192.168.0.5:53789] Traceback (most recent call last):
+[Sat May 30 23:22:59.372029 2020] [wsgi:error] [pid 3536:tid 140110792210176] [client 192.168.0.5:53789]   File "/var/www/flask/api.wsgi", line 9, in <module>
+[Sat May 30 23:22:59.372040 2020] [wsgi:error] [pid 3536:tid 140110792210176] [client 192.168.0.5:53789]     from api import app as application
+[Sat May 30 23:22:59.372059 2020] [wsgi:error] [pid 3536:tid 140110792210176] [client 192.168.0.5:53789]   File "/var/www/flask/api.py", line 16
+[Sat May 30 23:22:59.372072 2020] [wsgi:error] [pid 3536:tid 140110792210176] [client 192.168.0.5:53789]     arquivo = p.get('nome_arquivo').'mp3'
+[Sat May 30 23:22:59.372104 2020] [wsgi:error] [pid 3536:tid 140110792210176] [client 192.168.0.5:53789]                                     ^
+[Sat May 30 23:22:59.372116 2020] [wsgi:error] [pid 3536:tid 140110792210176] [client 192.168.0.5:53789] SyntaxError: invalid syntax
+[Sat May 30 23:28:26.195225 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822] ERROR:api:Exception on /audio [GET]
+[Sat May 30 23:28:26.195256 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822] Traceback (most recent call last):
+[Sat May 30 23:28:26.195262 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2447, in wsgi_app
+[Sat May 30 23:28:26.195266 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822]     response = self.full_dispatch_request()
+[Sat May 30 23:28:26.195269 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+[Sat May 30 23:28:26.195273 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822]     rv = self.handle_user_exception(e)
+[Sat May 30 23:28:26.195277 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1821, in handle_user_exception
+[Sat May 30 23:28:26.195280 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822]     reraise(exc_type, exc_value, tb)
+[Sat May 30 23:28:26.197428 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822]   File "/usr/local/lib/python3.8/dist-packages/flask/_compat.py", line 39, in reraise
+[Sat May 30 23:28:26.197444 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822]     raise value
+[Sat May 30 23:28:26.197448 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+[Sat May 30 23:28:26.197452 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822]     rv = self.dispatch_request()
+[Sat May 30 23:28:26.197455 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1936, in dispatch_request
+[Sat May 30 23:28:26.197459 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sat May 30 23:28:26.197462 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822]   File "/var/www/flask/api.py", line 17, in audio
+[Sat May 30 23:28:26.197466 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822]     saveAudio(txt,arquivo)
+[Sat May 30 23:28:26.197469 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822]   File "/var/www/flask/audio.py", line 6, in saveAudio
+[Sat May 30 23:28:26.197472 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822]     objeto.save(arq)
+[Sat May 30 23:28:26.197475 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822]   File "/usr/local/lib/python3.8/dist-packages/gtts/tts.py", line 294, in save
+[Sat May 30 23:28:26.197478 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822]     with open(str(savefile), 'wb') as f:
+[Sat May 30 23:28:26.197481 2020] [wsgi:error] [pid 3536:tid 140110758639360] [client 192.168.0.5:53822] PermissionError: [Errno 13] Permission denied: 'cesar.mp3.mp3'
+[Sat May 30 23:28:45.656520 2020] [wsgi:error] [pid 3536:tid 140110733461248] [client 192.168.0.5:53828] ERROR:api:Exception on /audio [GET]
+[Sat May 30 23:28:45.656564 2020] [wsgi:error] [pid 3536:tid 140110733461248] [client 192.168.0.5:53828] Traceback (most recent call last):
+[Sat May 30 23:28:45.656571 2020] [wsgi:error] [pid 3536:tid 140110733461248] [client 192.168.0.5:53828]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2447, in wsgi_app
+[Sat May 30 23:28:45.656576 2020] [wsgi:error] [pid 3536:tid 140110733461248] [client 192.168.0.5:53828]     response = self.full_dispatch_request()
+[Sat May 30 23:28:45.656580 2020] [wsgi:error] [pid 3536:tid 140110733461248] [client 192.168.0.5:53828]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+[Sat May 30 23:28:45.656584 2020] [wsgi:error] [pid 3536:tid 140110733461248] [client 192.168.0.5:53828]     rv = self.handle_user_exception(e)
+[Sat May 30 23:28:45.656588 2020] [wsgi:error] [pid 3536:tid 140110733461248] [client 192.168.0.5:53828]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1821, in handle_user_exception
+[Sat May 30 23:28:45.656592 2020] [wsgi:error] [pid 3536:tid 140110733461248] [client 192.168.0.5:53828]     reraise(exc_type, exc_value, tb)
+[Sat May 30 23:28:45.656596 2020] [wsgi:error] [pid 3536:tid 140110733461248] [client 192.168.0.5:53828]   File "/usr/local/lib/python3.8/dist-packages/flask/_compat.py", line 39, in reraise
+[Sat May 30 23:28:45.656601 2020] [wsgi:error] [pid 3536:tid 140110733461248] [client 192.168.0.5:53828]     raise value
+[Sat May 30 23:28:45.656605 2020] [wsgi:error] [pid 3536:tid 140110733461248] [client 192.168.0.5:53828]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+[Sat May 30 23:28:45.656608 2020] [wsgi:error] [pid 3536:tid 140110733461248] [client 192.168.0.5:53828]     rv = self.dispatch_request()
+[Sat May 30 23:28:45.656612 2020] [wsgi:error] [pid 3536:tid 140110733461248] [client 192.168.0.5:53828]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1936, in dispatch_request
+[Sat May 30 23:28:45.656634 2020] [wsgi:error] [pid 3536:tid 140110733461248] [client 192.168.0.5:53828]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sat May 30 23:28:45.656639 2020] [wsgi:error] [pid 3536:tid 140110733461248] [client 192.168.0.5:53828]   File "/var/www/flask/api.py", line 16, in audio
+[Sat May 30 23:28:45.656642 2020] [wsgi:error] [pid 3536:tid 140110733461248] [client 192.168.0.5:53828]     arquivo = p.get('nome_arquivo') + '.mp3'
+[Sat May 30 23:28:45.656646 2020] [wsgi:error] [pid 3536:tid 140110733461248] [client 192.168.0.5:53828] TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[Sat May 30 23:28:58.935921 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830] ERROR:api:Exception on /audio [GET]
+[Sat May 30 23:28:58.935961 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830] Traceback (most recent call last):
+[Sat May 30 23:28:58.935967 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2447, in wsgi_app
+[Sat May 30 23:28:58.935971 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830]     response = self.full_dispatch_request()
+[Sat May 30 23:28:58.935974 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+[Sat May 30 23:28:58.935978 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830]     rv = self.handle_user_exception(e)
+[Sat May 30 23:28:58.935981 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1821, in handle_user_exception
+[Sat May 30 23:28:58.935985 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830]     reraise(exc_type, exc_value, tb)
+[Sat May 30 23:28:58.935988 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830]   File "/usr/local/lib/python3.8/dist-packages/flask/_compat.py", line 39, in reraise
+[Sat May 30 23:28:58.935992 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830]     raise value
+[Sat May 30 23:28:58.935995 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+[Sat May 30 23:28:58.935999 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830]     rv = self.dispatch_request()
+[Sat May 30 23:28:58.936002 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1936, in dispatch_request
+[Sat May 30 23:28:58.936006 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sat May 30 23:28:58.936010 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830]   File "/var/www/flask/api.py", line 17, in audio
+[Sat May 30 23:28:58.936013 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830]     saveAudio(txt,arquivo)
+[Sat May 30 23:28:58.936017 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830]   File "/var/www/flask/audio.py", line 6, in saveAudio
+[Sat May 30 23:28:58.936020 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830]     objeto.save(arq)
+[Sat May 30 23:28:58.936023 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830]   File "/usr/local/lib/python3.8/dist-packages/gtts/tts.py", line 294, in save
+[Sat May 30 23:28:58.936027 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830]     with open(str(savefile), 'wb') as f:
+[Sat May 30 23:28:58.936030 2020] [wsgi:error] [pid 3536:tid 140110716675840] [client 192.168.0.5:53830] PermissionError: [Errno 13] Permission denied: 'cesar.mp3.mp3'
+[Sat May 30 23:36:39.246764 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893] ERROR:api:Exception on /audio [GET]
+[Sat May 30 23:36:39.246797 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893] Traceback (most recent call last):
+[Sat May 30 23:36:39.246803 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2447, in wsgi_app
+[Sat May 30 23:36:39.246807 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893]     response = self.full_dispatch_request()
+[Sat May 30 23:36:39.246811 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+[Sat May 30 23:36:39.246815 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893]     rv = self.handle_user_exception(e)
+[Sat May 30 23:36:39.246818 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1821, in handle_user_exception
+[Sat May 30 23:36:39.246822 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893]     reraise(exc_type, exc_value, tb)
+[Sat May 30 23:36:39.246825 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893]   File "/usr/local/lib/python3.8/dist-packages/flask/_compat.py", line 39, in reraise
+[Sat May 30 23:36:39.246829 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893]     raise value
+[Sat May 30 23:36:39.246832 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+[Sat May 30 23:36:39.246836 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893]     rv = self.dispatch_request()
+[Sat May 30 23:36:39.246840 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1936, in dispatch_request
+[Sat May 30 23:36:39.246844 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sat May 30 23:36:39.246848 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893]   File "/var/www/flask/api.py", line 17, in audio
+[Sat May 30 23:36:39.246851 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893]     saveAudio(txt,arquivo)
+[Sat May 30 23:36:39.246854 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893]   File "/var/www/flask/audio.py", line 6, in saveAudio
+[Sat May 30 23:36:39.246858 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893]     objeto.save(arq)
+[Sat May 30 23:36:39.246861 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893]   File "/usr/local/lib/python3.8/dist-packages/gtts/tts.py", line 294, in save
+[Sat May 30 23:36:39.246865 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893]     with open(str(savefile), 'wb') as f:
+[Sat May 30 23:36:39.246868 2020] [wsgi:error] [pid 3537:tid 140110808995584] [client 192.168.0.5:53893] PermissionError: [Errno 13] Permission denied: 'cesar.mp3.mp3'
+[Sat May 30 23:46:43.913737 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977] ERROR:api:Exception on /audio [GET]
+[Sat May 30 23:46:43.913871 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977] Traceback (most recent call last):
+[Sat May 30 23:46:43.913879 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2447, in wsgi_app
+[Sat May 30 23:46:43.913884 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977]     response = self.full_dispatch_request()
+[Sat May 30 23:46:43.913897 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+[Sat May 30 23:46:43.913900 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977]     rv = self.handle_user_exception(e)
+[Sat May 30 23:46:43.913903 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1821, in handle_user_exception
+[Sat May 30 23:46:43.913906 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977]     reraise(exc_type, exc_value, tb)
+[Sat May 30 23:46:43.913909 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977]   File "/usr/local/lib/python3.8/dist-packages/flask/_compat.py", line 39, in reraise
+[Sat May 30 23:46:43.913913 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977]     raise value
+[Sat May 30 23:46:43.913916 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+[Sat May 30 23:46:43.913919 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977]     rv = self.dispatch_request()
+[Sat May 30 23:46:43.913922 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1936, in dispatch_request
+[Sat May 30 23:46:43.913925 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sat May 30 23:46:43.913928 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977]   File "/var/www/flask/api.py", line 17, in audio
+[Sat May 30 23:46:43.913931 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977]     saveAudio(txt,arquivo)
+[Sat May 30 23:46:43.913934 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977]   File "/var/www/flask/audio.py", line 6, in saveAudio
+[Sat May 30 23:46:43.913938 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977]     objeto.save(arq)
+[Sat May 30 23:46:43.913941 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977]   File "/usr/local/lib/python3.8/dist-packages/gtts/tts.py", line 294, in save
+[Sat May 30 23:46:43.913944 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977]     with open(str(savefile), 'wb') as f:
+[Sat May 30 23:46:43.913947 2020] [wsgi:error] [pid 3837:tid 140299762378496] [client 192.168.0.5:53977] PermissionError: [Errno 13] Permission denied: '/var/www/html/cesar.mp3'
